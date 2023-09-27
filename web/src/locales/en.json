@@ -1,0 +1,69 @@
+{
+  "calculator": {
+    "calculator": "Calculator",
+    "typeHere": "Type here",
+    "numInput": "Type in a number:",
+    "nextNumInput": "Type in another number:",
+    "result": "The result of those numbers is:",
+    "medians": "Show medians in chart",
+    "search": "Search projects",
+    "coverage": "Filter Coverage (Only Numbers)",
+    "showFavorites": "Only show favorite proejctcards",
+    "redPrjects": "Show only projects where coverage < 80%"
+  },
+  "inputInfo": {
+    "inputInfo": "Input Info:",
+    "invert": "Invert:",
+    "input": "Input:",
+    "lowerCase": "Lower Case:",
+    "upperCase": "Upper Case:",
+    "withoutSpace": "Without Space:",
+    "countWords": "Count Words:"
+  },
+  "login": {
+    "login": "Login",
+    "password": "Password",
+    "username": "Username",
+    "createAccount": "Create Account"
+  },
+  "todoList": {
+    "todoList": "Todo Liste",
+    "addTask": "Add Task",
+    "editTask": "Edit",
+    "deleteTask": "Delete"
+  },
+  "productList": {
+    "productList": "Product list",
+    "price": "Price:",
+    "rating": "Rating:"
+  },
+  "pyramid": {
+    "pyramidOutput": "Pyramid Output",
+    "height": "How big should the pyramid be?",
+    "generate": "Generate"
+  },
+  "mixin": {
+    "mixin": "Mixin",
+    "clicked": "- times clicked",
+    "hovered": "- times hovered"
+  },
+  "registeredUsers": {
+    "name": "Name",
+    "age": "Age",
+    "userName": "Username",
+    "years": " Years old",
+    "edit": "Edit",
+    "delete": "Delete",
+    "addUser": "Add user",
+    "actions": "Actions",
+    "save": "Save",
+    "birth": "Birthday: "
+  },
+  "quoteViewer": {
+    "newQuote": "New Quote"
+  },
+  "guessNumber": {
+    "guessBetween": "Guess a number between 0 and 100",
+    "proove": "Proove"
+  }
+}
