@@ -26,8 +26,8 @@
         <p v-else>Daten werden geladen...</p>
     </div>
 
-    <button class="btn btn-ghost" @click="showPictures">Show Pictures</button>
-    <button class="btn btn-ghost" @click="showMorePictures">Show More Pictures</button>
+    <button class="btn btn-info" @click="showPictures">Show Pictures</button>
+    <button class="btn btn-success" @click="showMorePictures">Show More Pictures</button>
 </template>
 
 <script setup>

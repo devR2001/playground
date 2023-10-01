@@ -47,21 +47,7 @@
             </div>
         </div>
 
-        <div class=" ms-5 mt-5 card w-96 bg-primary text-primary-content">
-            <figure> <img id="myImage" class="mt-5" src="src\images\off.gif" style="width:100px"></figure>
-            <div class="card-body">
-                <h2 class="card-title justify-center">What Can JavaScript Do?</h2>
-                <div class="card-actions justify-center">
-                    <button class="btn btn-accent" type="button"
-                        onclick="document.getElementById('demo').style.display='none'">Hide Header</button>
-                    <button class="btn btn-accent" type="button"
-                        onclick="document.getElementById('demo').style.display='block'">
-                        Show Header</button>
-                </div>
-            </div>
-        </div>
-
-        <div class=" ms-5 me-5 mt-5 card w-96 bg-primary text-primary-content">
+        <div class=" ms-5 mt-5 me-5 card w-96 bg-primary text-primary-content">
             <figure> <img id="myImage" class="mt-5" src="src\images\off.gif" style="width:100px"></figure>
             <div class="card-body">
                 <h2 class="card-title justify-center">What Can JavaScript Do?</h2>

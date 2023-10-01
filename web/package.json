@@ -11,6 +11,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@vueuse/core": "^10.3.0",
     "autoprefixer": "^10.4.14",
+    "axios": "^1.5.1",
     "chart.js": "^4.3.3",
     "daisyui": "^3.5.1",
     "postcss": "^8",
@@ -18,7 +19,8 @@
     "vue": "^3.3.4",
     "vue-confetti": "^2.3.0",
     "vue-confetti-explosion": "^1.0.2",
-    "vue-i18n": "^9.4.1"
+    "vue-i18n": "^9.4.1",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

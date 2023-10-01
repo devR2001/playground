@@ -12,10 +12,8 @@ import { Chart, CategoryScale, LinearScale, BarController, BarElement, DoughnutC
 const myChart = ref(null);
 
 onMounted(() => {
-    // Registriere die erforderlichen Komponenten und Skalen
     Chart.register(CategoryScale, LinearScale, BarController, BarElement, DoughnutController, ArcElement);
 
-    // Daten für das Diagramm
     const data = {
         labels: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai'],
         datasets: [
@@ -27,12 +25,11 @@ onMounted(() => {
         ],
     };
 
-    // Optionen für das Diagramm
     const options = {
         scales: {
             x: {
                 type: 'category',
-                labels: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Senthuraan'],
+                labels: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai'],
             },
             y: {
                 beginAtZero: true,
@@ -40,10 +37,9 @@ onMounted(() => {
         },
     };
 
-    // Erstelle das Diagramm
     const ctx = myChart.value.getContext('2d');
     new Chart(ctx, {
-        type: 'bar', // Verwende den registrierten "bar" Controller
+        type: 'bar', 
         data: data,
         options: options,
     });

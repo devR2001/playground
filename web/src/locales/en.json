@@ -65,5 +65,10 @@
   "guessNumber": {
     "guessBetween": "Guess a number between 0 and 100",
     "proove": "Proove"
+  },
+  "fizzBuzz": {
+    "show": "Show FizzBuzz list",
+    "hide": "Hide FizzBuzz list",
+    "list": "FizzBuzz list"
   }
 }
