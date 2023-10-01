@@ -29,6 +29,7 @@
         </div>
         <button type="submit" class="btn btn-primary w-full">Register User</button>
         <p v-if="registerUserError" class="text-red-500 mt-2">{{ registerUserError }}</p>
+        <p v-if="registrationSuccess" class="text-green-500 mt-2">{{ registrationSuccess }}</p>
       </form>
       <div class="input-info nav-link me-5"><router-link to="/">Zum Login</router-link></div>
       <div class="input-info nav-link me-5"><router-link to="/registered-users">Registrierte Benutzer anzeigen</router-link></div>
@@ -48,6 +49,7 @@ const newUsername = ref('');
 const newPassword = ref('');
 const registerUserError = ref('');
 const registeredUsers = ref([]);
+const registrationSuccess = ref('');
 
 const registerUser = async () => {
   try {
@@ -69,6 +71,7 @@ const registerUser = async () => {
       birth.value = '';
       newUsername.value = '';
       newPassword.value = '';
+      registrationSuccess.value = "User registered successfully. Go back to Login.";
     } else {
       console.log('User registration failed');
       registerUserError.value = "User registration failed. Please check the inputs.";
