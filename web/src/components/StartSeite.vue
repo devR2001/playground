@@ -1,26 +1,34 @@
 <template>
     <div :key="confettiKey">
-        <ConfettiExplosion :duration="4000" :force="1" :stageHeight="840" :stageWidth="2600" :particleCount="300" />
+      <ConfettiExplosion :duration="4000" :force="1" :stageHeight="840" :stageWidth="2600" :particleCount="300" />
     </div>
+  
     <div>
-        <div class="logo-container mt-24">
-            <img src="/vite.svg" class="logo" alt="Vite logo" />
-            <img src="/vue.svg" class="logo vue" alt="Vue logo" />
+      <div class="logo-container mt-24">
+        <img src="/vite.svg" class="logo" alt="Vite logo" />
+        <img src="/vue.svg" class="logo vue" alt="Vue logo" />
+      </div>
+      
+      <div class="text-center">
+        <!-- Verwenden Sie Tailwind CSS-Klassen, um die Buttons nebeneinander und in der Mitte anzuzeigen -->
+        <div class="flex justify-center">
+          <button class="btn btn-secondary" @click="clickedConfetti">Willkommen</button>
+          <label for="my-drawer-4" class="btn btn-info ml-2">
+            Show Projects
+          </label>
         </div>
-        <div class="text-center">
-            <button class="btn btn-secondary mt-80" @click="clickedConfetti">Willkommen</button>
-        </div>
+      </div>
     </div>
-</template>
-
-<script setup>
-import ConfettiExplosion from "vue-confetti-explosion";
-import { ref } from 'vue'
-
-const confettiKey = ref(0);
-
-function clickedConfetti() {
+  </template>
+  
+  <script setup>
+  import ConfettiExplosion from "vue-confetti-explosion";
+  import { ref } from 'vue'
+  
+  const confettiKey = ref(0);
+  
+  function clickedConfetti() {
     confettiKey.value++;
-}
-
-</script>
+  }
+  </script>
+  
