@@ -10,13 +10,15 @@
       </div>
       
       <div class="text-center">
-        <!-- Verwenden Sie Tailwind CSS-Klassen, um die Buttons nebeneinander und in der Mitte anzuzeigen -->
         <div class="flex justify-center">
           <button class="btn btn-secondary" @click="clickedConfetti">Willkommen</button>
           <label for="my-drawer-4" class="btn btn-info ml-2">
             Show Projects
           </label>
         </div>
+        <a href="https://github.com/devR2001" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-success mt-2">Look at my GitHub Profile</button>
+        </a>
       </div>
     </div>
   </template>
