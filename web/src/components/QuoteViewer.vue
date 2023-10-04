@@ -47,10 +47,9 @@ const loadNewQuote = async () => {
     quotes.value = data;
     console.log(quotes.value);
 
-    // Zeige die Ladeanimation für 1,5 Sekunden an
     setTimeout(() => {
       loading.value = true;
-      selectRandomQuote(); // Wähle eine zufällige Quote
+      selectRandomQuote(); 
     }, 1500);
   } catch (error) {
     console.error(error);
@@ -58,7 +57,7 @@ const loadNewQuote = async () => {
 };
 
 onMounted(async () => {
-  await loadNewQuote(); // Lade ein Zitat beim Laden der Seite
+  await loadNewQuote();
 });
 </script>
   

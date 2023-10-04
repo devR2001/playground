@@ -3,7 +3,7 @@
 
     <div class="w-full max-w-xs">
       <div class="mt-5 prose">
-        <div class="flex justify-center"> <!-- Flexbox zur horizontalen Zentrierung -->
+        <div class="flex justify-center"> 
           <h1>
             {{ $t("inputInfo.inputInfo") }}
           </h1>

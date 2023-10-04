@@ -81,7 +81,6 @@ const registerUser = async () => {
   }
 };
 
-// Benutzerdaten bei Komponentenmontage abrufen
 onMounted(async () => {
   try {
     const response = await axios.get('http://localhost:4000/users');

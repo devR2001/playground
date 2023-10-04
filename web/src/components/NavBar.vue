@@ -82,6 +82,5 @@ const logout = () => {
   position: absolute;
   right: 0;
   margin: 1rem;
-  /* Du kannst den Abstand nach Bedarf anpassen */
 }
 </style>

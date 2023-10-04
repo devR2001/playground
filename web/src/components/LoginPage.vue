@@ -41,8 +41,8 @@ const login = async () => {
     });
 
     if (response.data.success) {
-      setAuthenticated(true); // Setze den Authentifizierungsstatus auf true
-      router.push('/start-seite'); // Weiterleitung zur Startseite nach dem erfolgreichen Login
+      setAuthenticated(true); 
+      router.push('/start-seite'); 
     } else {
       console.log('Login failed');
       loginError.value = 'Login failed. Please check your username and password';
