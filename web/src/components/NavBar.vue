@@ -1,7 +1,7 @@
 <template>
   <div class="navbar bg-primary text-primary-content">
 
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a class="btn btn-ghost normal-case text-xl">MyApp</a>
 
     <div class="drawer" style="z-index: 1000;">
       <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />

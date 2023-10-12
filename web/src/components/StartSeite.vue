@@ -17,7 +17,7 @@
           </label>
         </div>
         <a href="https://github.com/devR2001" target="_blank" rel="noopener noreferrer">
-          <button class="btn btn-success mt-2">Look at my GitHub Profile</button>
+          <button class="btn btn-success mt-2">Look at my GitHub Profile: devR2001</button>
         </a>
       </div>
     </div>
