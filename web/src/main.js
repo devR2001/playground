@@ -100,14 +100,13 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  // Prüfe, ob die Seite eine Authentifizierung erfordert und ob der Benutzer authentifiziert ist
   if (
     to.matched.some((record) => record.meta.requiresAuth) &&
     !authState.isAuthenticated
   ) {
-    next({ path: "/" }); // Weiterleitung zur Login-Seite
+    next({ path: "/" }); 
   } else {
-    next(); // Erlaube den Zugriff auf die Seite
+    next(); 
   }
 });
 
