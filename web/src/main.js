@@ -27,6 +27,7 @@ import FizzBuzz from "./components/FizzBuzz.vue";
 import PalindromeChecker from "./components/PalindromeChecker.vue";
 import MyChat from "./components/MyChat.vue";
 import Gallery from "./components/Gallerypage.vue";
+import Aufgaben from "./components/Aufgaben.vue";
 
 const app = createApp(App);
 
@@ -89,6 +90,11 @@ const routes = [
   {
     path: "/gallery",
     component: Gallery,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: "/work",
+    component: Aufgaben,
     meta: { requiresAuth: true },
   },
 ];

@@ -36,6 +36,7 @@
           <li><router-link to="/palindrome">Palindrome Checker</router-link></li>
           <li><router-link to="/my-chat">My Chat</router-link></li>
           <li><router-link to="/gallery">Gallery</router-link></li>
+          <li><router-link to="/work">Work</router-link></li>
         </ul>
       </div>
     </div>
