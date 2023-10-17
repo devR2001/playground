@@ -9,13 +9,21 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const counter = ref(0);
 const congratulationMessage = "Herrvoragend! Der Zähler hat 10 erreicht!"
 
+onMounted(() => {
+    const savedCounter = localStorage.getItem("counter")
+    if(savedCounter !== null){
+        counter.value = parseInt(savedCounter)
+    }
+})
+
 function increment() {
   counter.value++;
+  localStorage.setItem("counter", counter.value)
 }
 
 function decrement() {
@@ -24,10 +32,12 @@ function decrement() {
   } else {
     counter.value --
   }
+  localStorage.setItem("counter", counter.value)
 }
 
 const reset = () => {
     counter.value = 0
+    localStorage.removeItem("counter")
 }
 </script>
 
