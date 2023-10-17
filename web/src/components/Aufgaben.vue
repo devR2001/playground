@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 
 const counter = ref(0);
 const congratulationMessage = "Herrvoragend! Der Zähler hat 10 erreicht!"
@@ -39,6 +39,26 @@ const reset = () => {
     counter.value = 0
     localStorage.removeItem("counter")
 }
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowUp"){
+        increment()
+    } else if(event.key === "ArrowDown") {
+        decrement()
+    }
+})
+
+const validateCounter = (value) =>{
+    if (value < 0){
+        return 0 
+    } 
+    return value
+}
+
+watch(counter,(newVal) => {
+    counter.value = validateCounter(newVal)
+    localStorage.setItem("counter", counter.value)
+})
 </script>
 
 
