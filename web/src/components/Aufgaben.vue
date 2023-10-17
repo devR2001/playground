@@ -1,6 +1,7 @@
 <template>
   <div>
     <p>Counter: {{ counter }}</p>
+    <input type="number" v-model="inputValue" @input="updateCounter"/>
     <button class="me-3 btn btn-secondary" @click="increment">Increment</button>
     <button class="me-3 btn btn-primary" @click="decrement">Decrement</button>
     <button class="me-3 btn btn-error" @click="reset">Reset</button>
@@ -13,6 +14,7 @@ import { ref, onMounted, watch } from "vue";
 
 const counter = ref(0);
 const congratulationMessage = "Herrvoragend! Der Zähler hat 10 erreicht!"
+const inputValue = ref("")
 
 onMounted(() => {
     const savedCounter = localStorage.getItem("counter")
@@ -37,7 +39,16 @@ function decrement() {
 
 const reset = () => {
     counter.value = 0
+    inputValue.value = ""
     localStorage.removeItem("counter")
+}
+
+function updateCounter(){
+    const value = parseInt(inputValue.value)
+    if (!isNaN(value)){
+        counter.value = value
+        localStorage.setItem("counter", counter.value)
+    }
 }
 
 window.addEventListener("keydown", (event) => {
@@ -59,6 +70,11 @@ watch(counter,(newVal) => {
     counter.value = validateCounter(newVal)
     localStorage.setItem("counter", counter.value)
 })
+
+watch(counter, (newVal, oldVal) => {
+  console.log("Neuer Wert von counter: " + newVal);
+  console.log("Alter Wert von counter: " + oldVal);
+});
 </script>
 
 
